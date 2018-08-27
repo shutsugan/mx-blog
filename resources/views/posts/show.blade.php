@@ -3,7 +3,7 @@
 @section('content')
     <a href="/posts" class="btn btn-default">Go Back</a>
     <h1>{{$post->title}}</h1>
-    <div>{{$post->body}}</div>
+    <div>{!! $post->body !!}</div>
     <hr>
     <small>Writtel on {{$post->created_at}}</small>
 @endsection
