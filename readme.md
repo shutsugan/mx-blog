@@ -16,11 +16,11 @@ Please check the official laravel installation guide for server requirements bef
 
 Clone the repository
 
-    git clone git@github.com:gothinkster/laravel-realworld-example-app.git
+    git clone https://github.com/shutsugan/mx-blog.git
 
 Switch to the repo folder
 
-    cd laravel-realworld-example-app
+    cd mx-blog
 
 Install all the dependencies using composer
 
