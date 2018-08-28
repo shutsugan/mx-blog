@@ -3,6 +3,13 @@
 @section('content')
     <a href="/posts" class="btn btn-default">Go Back</a>
     <h1>{{$post->title}}</h1>
+    @if($post->cover_image == '')
+        <img style="width:100%" src="/storage/cover_images/noimage.jpg">
+    @else
+        <img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}">
+    @endif
+    <br>
+    <br>
     <div>{!! $post->body !!}</div>
     <hr>
     <small>Writtel on {{$post->created_at}} by {{$post->user['name']}}</small>
